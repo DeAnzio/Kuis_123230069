@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class MovieModel {
   String title;
   int year;
@@ -24,157 +26,180 @@ class MovieModel {
 
 List<MovieModel> movieList = [
   MovieModel(
-      title: "Inception",
-      year: 2010,
-      genre: "Sci-Fi",
-      director: "Christopher Nolan",
-      casts: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
-      rating: 8.8,
+      title: "Rush",
+      year: 2013,
+      genre: "Racing",
+      director: "Ron Howard",
+      casts: ["Chris Hemsworth", "Daniel Brühl", "Olivia Wilde"],
+      rating: 8.1,
       synopsis:
-          "A skilled thief who specializes in corporate espionage is given a final job that could grant him redemption: to plant an idea deep within a target's subconscious. As his team delves into the dream world, reality and illusion blur, making the mission increasingly dangerous.",
+          "Kisah nyata rivalitas epik antara dua pembalap Formula 1 legendaris, James Hunt dan Niki Lauda, selama musim balap 1976 yang penuh ketegangan. Dua karakter yang bertolak belakang bersaing dengan taruhan nyawa demi menjadi juara dunia.",
       imgUrl:
-          "https://m.media-amazon.com/images/M/MV5BMTM0MjUzNjkwMl5BMl5BanBnXkFtZTcwNjY0OTk1Mw@@._V1_.jpg",
-      movieUrl: "https://en.wikipedia.org/wiki/Inception"),
+          "https://m.media-amazon.com/images/M/MV5BMTQyMDE0MTY0OV5BMl5BanBnXkFtZTcwMjI2OTI0OQ@@._V1_FMjpg_UX1000_.jpg",
+      movieUrl: "https://en.wikipedia.org/wiki/Rush_(2013_film)"),
   MovieModel(
-      title: "The Shawshank Redemption",
-      year: 1994,
-      genre: "Drama",
-      director: "Frank Darabont",
-      casts: ["Tim Robbins", "Morgan Freeman"],
-      rating: 9.3,
+      title: "Ford v Ferrari",
+      year: 2019,
+      genre: "Racing",
+      director: "James Mangold",
+      casts: ["Matt Damon", "Christian Bale", "Jon Bernthal"],
+      rating: 8.1,
       synopsis:
-          "Andy Dufresne, a banker wrongly convicted of murder, is sentenced to life in Shawshank prison. Over the years, he befriends fellow inmate Red and earns the trust of the warden, using his skills to help manage prison finances. But Andy has a secret plan that could lead to freedom.",
+          "Insinyur otomotif Carroll Shelby dan pembalap pemberani Ken Miles bersama-sama membangun mobil balap revolusioner untuk Ford dengan tujuan mengalahkan Ferrari di Le Mans 1966. Sebuah kisah nyata tentang ketekunan, persahabatan, dan semangat juang.",
       imgUrl:
-          "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_.jpg",
-      movieUrl: "https://en.wikipedia.org/wiki/The_Shawshank_Redemption"),
+          "https://m.media-amazon.com/images/S/pv-target-images/b7a51fcdee29dcb53bc11170b510e85ae808176477d01a00795ad7288d69f5ac.jpg",
+      movieUrl: "https://en.wikipedia.org/wiki/Ford_v_Ferrari"),
   MovieModel(
-      title: "Interstellar",
-      year: 2014,
-      genre: "Sci-Fi",
-      director: "Christopher Nolan",
-      casts: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
-      rating: 8.6,
+      title: "Herbie: Fully Loaded",
+      year: 2005,
+      genre: "Racing",
+      director: "Angela Robinson",
+      casts: ["Lindsay Lohan", "Michael Keaton", "Matt Dillon"],
+      rating: 5.5,
       synopsis:
-          "In a dystopian future where Earth is slowly becoming uninhabitable, a group of astronauts embarks on a mission through a wormhole in search of a new home for humanity. As they travel through space and time, they face unimaginable challenges, including love, loss, and the nature of human survival.",
+          "Maggie Peyton, putri seorang mantan pembalap, menemukan mobil VW Beetle tua bernomor 53 yang ternyata memiliki pikiran sendiri. Bersama Herbie, ia terjun ke dunia NASCAR dan membuktikan bahwa mobil kecil pun bisa mengalahkan yang terbesar.",
       imgUrl:
-          "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      movieUrl: "https://en.wikipedia.org/wiki/Interstellar_(film)"),
+          "https://m.media-amazon.com/images/M/MV5BMTkwNDI5NDcyMV5BMl5BanBnXkFtZTcwMjg5OTcyMQ@@._V1_FMjpg_UX1000_.jpg",
+      movieUrl: "https://en.wikipedia.org/wiki/Herbie:_Fully_Loaded"),
   MovieModel(
-    title: "The Dark Knight",
-    year: 2008,
-    genre: "Action",
-    director: "Christopher Nolan",
-    casts: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-    rating: 9.0,
-    synopsis:
-        "With Gotham under threat from the enigmatic and chaotic Joker, Batman must push his limits to save the city. As the Joker unleashes a wave of destruction, Bruce Wayne faces personal and moral dilemmas that could define his legacy as the Dark Knight.",
-    imgUrl:
-        "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
-    movieUrl: "https://en.wikipedia.org/wiki/The_Dark_Knight",
-  ),
-  MovieModel(
-    title: "Forrest Gump",
-    year: 1994,
-    genre: "Drama",
-    director: "Robert Zemeckis",
-    casts: ["Tom Hanks", "Robin Wright", "Gary Sinise"],
-    rating: 8.8,
-    synopsis:
-        "Forrest Gump, a kind-hearted and simple man with a low IQ, unwittingly influences some of the most significant events in American history. Through his journey of love, war, and self-discovery, he teaches those around him that success isn't just about intelligence but about kindness and perseverance.",
-    imgUrl:
-        "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    movieUrl: "https://en.wikipedia.org/wiki/Forrest_Gump",
-  ),
-  MovieModel(
-    title: "The Matrix",
-    year: 1999,
-    genre: "Sci-Fi",
-    director: "Lana Wachowski, Lilly Wachowski",
-    casts: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
-    rating: 8.7,
-    synopsis:
-        "Neo, a computer hacker, discovers that the world he lives in is a simulated reality controlled by machines. He joins a rebellion led by Morpheus and Trinity to fight for the freedom of humanity and uncover the truth about the Matrix.",
-    imgUrl:
-        "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg",
-    movieUrl: "https://en.wikipedia.org/wiki/The_Matrix",
-  ),
-  MovieModel(
-    title: "The Godfather",
-    year: 1972,
-    genre: "Crime",
-    director: "Francis Ford Coppola",
-    casts: ["Marlon Brando", "Al Pacino", "James Caan"],
-    rating: 9.2,
-    synopsis:
-        "The aging patriarch of the Corleone crime family hands over control to his reluctant son, Michael. As he gets entangled in the family business, Michael transforms into a ruthless leader, willing to do whatever it takes to protect the family legacy.",
-    imgUrl:
-        "https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    movieUrl: "https://en.wikipedia.org/wiki/The_Godfather",
-  ),
-  MovieModel(
-    title: "Titanic",
-    year: 1997,
-    genre: "Romance",
-    director: "James Cameron",
-    casts: ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
-    rating: 7.8,
-    synopsis:
-        "A young aristocrat falls in love with a struggling artist aboard the ill-fated Titanic. As the ship meets its tragic fate, their love is tested in the most harrowing of circumstances, showing that love can transcend even the greatest disasters.",
-    imgUrl:
-        "https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    movieUrl: "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
-  ),
-  MovieModel(
-    title: "Pulp Fiction",
-    year: 1994,
-    genre: "Crime",
-    director: "Quentin Tarantino",
-    casts: ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
-    rating: 8.9,
-    synopsis:
-        "A series of interwoven stories about crime, redemption, and fate unfold in Tarantino’s classic. From hitmen on a job to an aging boxer fighting for his life, Pulp Fiction remains a thrilling cinematic experience filled with iconic dialogue and dark humor.",
-    imgUrl:
-        "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    movieUrl: "https://en.wikipedia.org/wiki/Pulp_Fiction",
-  ),
-  MovieModel(
-    title: "Avatar",
-    year: 2009,
-    genre: "Sci-Fi",
-    director: "James Cameron",
-    casts: ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
-    rating: 7.8,
-    synopsis:
-        "In the distant world of Pandora, a paraplegic Marine, Jake Sully, embarks on a mission that leads him to question his loyalties. As he connects with the native Na’vi, he finds himself torn between his orders and the people he has come to love.",
-    imgUrl:
-        "https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    movieUrl: "https://en.wikipedia.org/wiki/Avatar_(2009_film)",
-  ),
-  MovieModel(
-    title: "The Lord of the Rings: The Fellowship of the Ring",
+    title: "The Fast and the Furious",
     year: 2001,
-    genre: "Fantasy",
-    director: "Peter Jackson",
-    casts: ["Elijah Wood", "Ian McKellen", "Viggo Mortensen"],
-    rating: 8.8,
+    genre: "Racing",
+    director: "Rob Cohen",
+    casts: ["Vin Diesel", "Paul Walker", "Jordana Brewster"],
+    rating: 6.8,
     synopsis:
-        "A young hobbit, Frodo Baggins, inherits a powerful ring and must embark on a perilous journey across Middle-earth to destroy it before it falls into the hands of the dark lord Sauron. Alongside his trusted companions, he faces unimaginable dangers and moral dilemmas.",
+        "Seorang agen polisi yang menyamar menyusup ke komunitas balapan liar jalanan Los Angeles untuk mengungkap sindikat pencurian truk. Di tengah misinya, ia terseret dalam persahabatan dan loyalitas yang menguji segalanya.",
     imgUrl:
-        "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    movieUrl:
-        "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiUqpXcYxMMb69OJ9B5P8UpqgvDwnFcPv7MQ&s",
+    movieUrl: "https://en.wikipedia.org/wiki/The_Fast_and_the_Furious",
   ),
   MovieModel(
-    title: "Fight Club",
-    year: 1999,
-    genre: "Drama",
-    director: "David Fincher",
-    casts: ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
-    rating: 8.8,
+    title: "Gran Turismo",
+    year: 2023,
+    genre: "Racing",
+    director: "Neill Blomkamp",
+    casts: ["Archie Madekwe", "David Harbour", "Orlando Bloom"],
+    rating: 7.1,
     synopsis:
-        "An insomniac office worker struggling with his mundane life forms an underground fight club with a charismatic soap salesman. As their violent escapades spiral out of control, he uncovers shocking truths about identity, consumerism, and mental illness.",
+        "Kisah nyata Jann Mardenborough, seorang gamer Gran Turismo remaja yang memenangkan kompetisi Nissan dan berhasil menjadi pembalap profesional sungguhan. Film ini membuktikan bahwa batas antara dunia virtual dan nyata bisa ditembus dengan tekad.",
     imgUrl:
-        "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    movieUrl: "https://en.wikipedia.org/wiki/Fight_Club",
+        "https://m.media-amazon.com/images/M/MV5BMjA0N2YyNmYtZDk4Ny00ODE2LThmZWQtNGJiMDk0YzhiNzE5XkEyXkFqcGc@._V1_.jpg",
+    movieUrl: "https://en.wikipedia.org/wiki/Gran_Turismo_(film)",
+  ),
+  MovieModel(
+    title: "Speed Racer",
+    year: 2008,
+    genre: "Racing",
+    director: "Lana Wachowski, Lilly Wachowski",
+    casts: ["Emile Hirsch", "Christina Ricci", "John Goodman"],
+    rating: 6.1,
+    synopsis:
+        "Speed Racer adalah pembalap muda yang bermimpi meneruskan warisan sang kakak di dunia balap. Ia harus melawan korupsi dan konspirasi besar yang mengendalikan industri balap dunia demi membuktikan bahwa kejujuran masih bisa menang.",
+    imgUrl:
+        "https://image.tmdb.org/t/p/original/fxRIpx9Op9h71q3tvuabx4GryyP.jpg",
+    movieUrl: "https://en.wikipedia.org/wiki/Speed_Racer_(film)",
+  ),
+  MovieModel(
+    title: "Need for Speed",
+    year: 2014,
+    genre: "Racing",
+    director: "Scott Waugh",
+    casts: ["Aaron Paul", "Dominic Cooper", "Imogen Poots"],
+    rating: 6.4,
+    synopsis:
+        "Tobey Marshall, pembalap jalanan berbakat, keluar dari penjara dengan satu tujuan: membalas dendam kepada rivalnya yang licik. Ia memacu mobil senilai jutaan dolar melintasi Amerika dalam balapan ilegal paling berbahaya demi membuktikan kebenaran dan meraih keadilan.",
+    imgUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZZMYxcezoQ9wHiUNRW9t3lVANPuH7YllrQ&s",
+    movieUrl: "https://en.wikipedia.org/wiki/Need_for_Speed_(film)",
+  ),
+  MovieModel(
+    title: "Taxi",
+    year: 1998,
+    genre: "Racing",
+    director: "Gérard Pirès",
+    casts: ["Samy Naceri", "Frédéric Diefenthal", "Marion Cotillard"],
+    rating: 7.3,
+    synopsis:
+        "Daniel, seorang kurir pizza yang gemar balapan, mendapatkan SIM taksi dan mengubah mobilnya menjadi kendaraan super cepat. Ia terpaksa bekerja sama dengan polisi canggung Émilien untuk menangkap kawanan perampok bank asal Jerman yang selalu lolos dengan mobil Mercedes mereka.",
+    imgUrl:
+        "https://m.media-amazon.com/images/M/MV5BZTlkM2EzOTAtMTgzZi00NDEyLWJjOGItYWJiYTE2NmRlODMwXkEyXkFqcGc@._V1_.jpg",
+    movieUrl: "https://en.wikipedia.org/wiki/Taxi_(1998_film)",
+  ),
+  MovieModel(
+    title: "Cars",
+    year: 2006,
+    genre: "Racing",
+    director: "John Lasseter",
+    casts: ["Owen Wilson", "Paul Newman", "Bonnie Hunt"],
+    rating: 7.2,
+    synopsis:
+        "Lightning McQueen, mobil balap muda yang sombong dan ambisius, terdampar di kota kecil Radiator Springs sebelum balapan besar. Ia belajar tentang persahabatan, kerendahan hati, dan arti sesungguhnya dari sebuah kemenangan.",
+    imgUrl:
+        "https://m.media-amazon.com/images/M/MV5BMDk5ZWI2ZTgtZmU3My00Y2Y3LTkzMzctNmExZmE3NWQ0OGRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    movieUrl: "https://en.wikipedia.org/wiki/Cars_(film)",
+  ),
+  MovieModel(
+    title: "Le Mans",
+    year: 1971,
+    genre: "Racing",
+    director: "Lee H. Katzin",
+    casts: ["Steve McQueen", "Siegfried Rauch", "Elga Andersen"],
+    rating: 7.0,
+    synopsis:
+        "Michael Delaney, pembalap Porsche asal Amerika, kembali ke ajang 24 Hours of Le Mans setahun setelah terlibat kecelakaan fatal. Film ikonik ini menampilkan footage balapan nyata dan menangkap adrenalin serta bahaya sejati dunia balap endurance.",
+    imgUrl:
+        "https://m.media-amazon.com/images/M/MV5BYmNmNjViZDYtZDhmOC00M2E5LWI2NmYtNDg2YWFhNzMxOWFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    movieUrl: "https://en.wikipedia.org/wiki/Le_Mans_(film)",
+  ),
+  MovieModel(
+    title: "Turbo",
+    year: 2013,
+    genre: "Racing",
+    director: "David Soren",
+    casts: ["Ryan Reynolds", "Paul Giamatti", "Michael Peña"],
+    rating: 6.5,
+    synopsis:
+        "Turbo adalah siput taman biasa yang memiliki mimpi besar: memenangkan Indianapolis 500. Setelah mendapatkan kecepatan supersonik secara ajaib, ia berjuang membuktikan bahwa tidak ada mimpi yang terlalu besar, bahkan bagi seekor siput.",
+    imgUrl:
+        "https://m.media-amazon.com/images/M/MV5BMTA4NTgwMjM5MzheQTJeQWpwZ15BbWU3MDg2ODA1ODk@._V1_.jpg",
+    movieUrl: "https://en.wikipedia.org/wiki/Turbo_(2013_film)",
   ),
 ];
+
+class MovieDetailPage extends StatelessWidget {
+  final MovieModel movie;
+
+  const MovieDetailPage({super.key, required this.movie});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(movie.title),
+        backgroundColor: Colors.blue,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Image.network(movie.imgUrl, height: 200, fit: BoxFit.cover),
+            const SizedBox(height: 16),
+            Text('Judul: ${movie.title}', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            Text('Tahun: ${movie.year}'),
+            Text('Genre: ${movie.genre}'),
+            Text('Director: ${movie.director}'),
+            Text('Rating: ${movie.rating}'),
+            const SizedBox(height: 16),
+            const Text('Sinopsis:', style: TextStyle(fontWeight: FontWeight.bold)),
+            Text(movie.synopsis),
+            const SizedBox(height: 16),
+            const Text('Casts:', style: TextStyle(fontWeight: FontWeight.bold)),
+            Text(movie.casts.join(', ')),
+          ],
+        ),
+      ),
+    );
+  }
+}
