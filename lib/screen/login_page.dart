@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'moviel_list_page.dart';
+import 'news_list_page.dart';
+
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -20,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
     if (username == "verrel069" && password == "pass069"){
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const MovieListPage()),
+        MaterialPageRoute(builder: (context) => const NewsListPage()),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -45,8 +46,10 @@ class _LoginPageState extends State<LoginPage> {
           child: Padding(
             padding: EdgeInsets.all(16.0),
             child: Column(
+              
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+              Image.asset('aset/upnLogo.png'),
               Text('Login', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
               SizedBox(height: 20),
               _usernameField(_usernameController),
